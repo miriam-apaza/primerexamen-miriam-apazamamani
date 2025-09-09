@@ -3,34 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page MANACO</title>
-  <style>
-    /* Estilo para skip link (aparece solo con foco) */
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: #000;
-      color: #fff;
-      padding: 8px;
-      z-index: 100;
-    }
-    .skip-link:focus {
-      top: 0;
-    }
+  
+  <title>MANACO | Calzado de calidad para todos</title>
+  <meta name="description" content="Landing page de MANACO: calzado de calidad, resistente y cómodo para todos los estilos. Descubre nuestros productos y contáctanos.">
 
-    /* Foco visible en links */
-    a:focus {
-      outline: 3px solid #ff0000;
-    }
-  </style>
+  <!-- Open Graph -->
+  <meta property="og:title" content="MANACO | Calzado de calidad para todos">
+  <meta property="og:description" content="Landing page de MANACO: calzado de calidad, resistente y cómodo para todos los estilos.">
+  <meta property="og:image" content="https://tusitio.com/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tusitio.com">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Skip link -->
   <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
 
   <header>
+   <div><strong>MANACO</strong></div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </nav>
+
     <nav aria-label="Navegación principal">
+      <h1 class="logo">MANACO</h1>
       <ul>
         <li><a href="#productos">Productos</a></li>
         <li><a href="#contacto">Contacto</a></li>
@@ -40,36 +39,44 @@
 
   <main id="contenido">
     <section>
-      <h1>Bienvenido a MANACO</h1>
-      <p>Calzado de calidad para todos los estilos.</p>
-      <img src="zapatos.jpg" alt="Zapatos de cuero MANACO color negro">
+      <h2>Calzado de calidad</h2>
+      <p>Calzado resistente y cómodo para todos los estilos.</p>
     </section>
 
-    <section id="productos">
-      <h2>Nuestros Productos</h2>
+     <!-- Eslogan -->
+  <section class="hero">
+    <h1>Calzado que impulsa tu paso</h1>
+  </section>
 
-      <article>
-        <h3>Producto 1</h3>
-        <p>Descripción breve del producto 1.</p>
-        <img src="producto1.jpg" alt="Zapatilla deportiva color azul">
-      </article>
+  <!-- Productos -->
+  <section class="productos">
+    <h2>Productos</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="img-placeholder"></div>
+        <p>Producto 1</p>
+        <p>$00.00</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <div class="img-placeholder"></div>
+        <p>Producto 2</p>
+        <p>$00.00</p>
+        <button>Comprar</button>
+      </div>
+      <div class="card">
+        <div class="img-placeholder"></div>
+        <p>Producto 3</p>
+        <p>$00.00</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </section>
 
-      <article>
-        <h3>Producto 2</h3>
-        <p>Descripción breve del producto 2.</p>
-        <img src="producto2.jpg" alt="Zapato de vestir color café">
-      </article>
-
-      <article>
-        <h3>Producto 3</h3>
-        <p>Descripción breve del producto 3.</p>
-        <img src="producto3.jpg" alt="Botín de cuero color negro">
-      </article>
-    </section>
   </main>
 
   <footer id="contacto">
-    <p>Contacto: info@manaco.com</p>
+    <p class="footer-text">© 2025 MANACO</p>
   </footer>
 </body>
 </html>
